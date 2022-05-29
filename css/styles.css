@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.colorFondo{ 
+    background-color: #E4D6A7;
+}
+
+
+.logo { 
+    text-decoration: none;
+
+    background-color: #9B3D12 ;
+
+    width: 60px;
+    height: 25px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-width: 5px;
+    margin-bottom: 30px;
+
+    border: solid 2px black;
+}
+
+.secciones { 
+    list-style: none;
+    font-weight: bold;
+    display: flex; 
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    padding: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.secciones li a { 
+    color: black;
+    text-decoration: none;
+    background-color:#57886C;
+    padding: 10px;
+    display: block;
+}
+
+.articulo{  
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 10px; 
+    grid-template-areas: 
+    "imagen texto"; 
+
+
+    margin:50px 50px ;
+    padding: 20px 10px;
+    border: solid 2px black
+}
+
+.imagen{ 
+    display: flex;
+    flex-grow: ;
+    width: 100%;
+    grid-area: imagen;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px;
+}
+
+.volver{ 
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 100px;
+    width: 200px;
+
+    background: #E9B44C;
+
+    line-height: 100px;
+    text-align: center;
+    vertical-align: middle;
+
+    border: solid 2px black;
+}
+
+.derechos{
+    font-weight: bold;
+}
+
+.torneo{ 
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 100px;
+    width: 300px;
+
+    background: #E9B44C;
+
+    line-height: 100px;
+    text-align: center;
+    vertical-align: middle;
+
+    border: solid 2px black;
+}
+
+table{
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th{
+    text-align: left;
+}
+
+.form{ 
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 500px;
+    width: 300px;
+
+    background: #E9B44C;
+
+    line-height: 100px;
+    text-align: center;
+    vertical-align: middle;
+
+
+    border: solid 2px black;
+}
