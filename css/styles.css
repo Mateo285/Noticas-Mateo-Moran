@@ -35,6 +35,7 @@
     flex-wrap: wrap;
     padding: 10px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
 }
 
 .secciones li a { 
@@ -45,10 +46,14 @@
     display: block;
 }
 
+.secciones li a:hover{
+    background-color: rgb(212, 154, 114);
+}
+
 .articulo{  
     display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr; 
+    grid-template-columns: 1fr 0.5fr;
+    justify-content: center; 
     gap: 10px; 
     grid-template-areas: 
     "imagen texto"; 
@@ -56,21 +61,26 @@
 
     margin:50px 50px ;
     padding: 20px 10px;
-    border: solid 2px black
 }
 
 .imagen{ 
     display: flex;
-    flex-grow: ;
     width: 100%;
     grid-area: imagen;
+    border-radius: 10px;
 }
 
 .texto{
     display: flex;
     flex-direction: column;
     justify-content: end;
-    gap: 10px;
+    gap: px;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .volver{ 
@@ -80,15 +90,16 @@
     margin-right: auto;
 
     height: 100px;
-    width: 200px;
+    width: 150px;
 
-    background: #E9B44C;
+    background: linear-gradient(to left,#E9B44C,#E4D6A7) ;
 
     line-height: 100px;
     text-align: center;
     vertical-align: middle;
 
     border: solid 2px black;
+    border-radius: 10px;
 }
 
 .derechos{
